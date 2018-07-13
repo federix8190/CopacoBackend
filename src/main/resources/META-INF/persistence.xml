@@ -3,10 +3,10 @@
     <persistence-unit name="org.jbpm.persistence.jpa" transaction-type="JTA">
         <jta-data-source>java:jboss/datasources/CopacoBillingDS</jta-data-source>
         <properties>
-            <property name="hibernate.dialect" value="py.com.copaco.core.backend.hibernate.InformixDialect" />
+            <property name="hibernate.dialect" value="py.com.copaco.core.backend.hibernate.InformixDialect2" />
             <property name="hibernate.show_sql" value="false" />
-            <!--<property name="hibernate.cache.region.factory_class"
-                      value="org.hibernate.cache.ehcache.EhCacheRegionFactory" />-->
+            <!--<property name="hibernate.cache.region.factory_class" 
+                          value="org.hibernate.cache.ehcache.EhCacheRegionFactory" />-->
             <property name="hibernate.cache.provider_class" value="org.hibernate.cache.EhCacheProvider" />
             <property name="hibernate.cache.use_second_level_cache" value="true" />
             <property name="hibernate.cache.use_query_cache" value="true" />
